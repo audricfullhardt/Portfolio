@@ -1,0 +1,971 @@
+:root{
+    --lightmode-color : white;
+    --darkmode-color : #333;
+}
+*{
+    font-family: "Paytone One", sans-serif;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: all .3s ease;
+}
+    html{
+    scroll-behavior: smooth;
+}
+
+/* ******************************VERSION MOBILE ********************************************************************** */
+
+@media screen and (max-width: 480px){
+    
+    /* landing page ********************************************************************************* */
+    body{
+        background-color: var(--lightmode-color);
+    }
+    #landing-page{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    header nav ul li a {
+        color : var(--darkmode-color);
+        text-decoration: none;
+        font-size: 3vw;
+    }
+
+    header nav ul{
+        padding: 0;
+        padding-top: 1vh;
+    }
+
+    header{
+        width: 99vw;
+    }
+
+    nav{
+        width: 70vw;
+        margin: 0 auto;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
+    #titles{
+        margin-top: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        flex-direction: column;
+    }
+
+    #landing-page h1{
+        width: fit-content;
+    }
+
+    #titre1{
+        font-size: 8vw;
+        color: var(--darkmode-color);
+    }
+
+    #titre2 {
+        margin-top: 1vh;
+        color: transparent;
+        -webkit-text-stroke: 0.01vw var(--darkmode-color);
+        font-size: 7vw;
+    }
+
+    #dark-light-mode-container{
+        right: 1vh;
+        top: 1vh;
+        position: fixed;
+        background-image: url(images/dark-light/moon.svg);
+        background-repeat: no-repeat;
+        background-size: 3vh;
+        background-position: center;
+        width: 5vw;
+        height: 3vh;
+    }
+    /* landing page ********************************************************************************* */
+
+
+
+    /* presentation page ********************************************************************************* */
+    
+    #presentation-page{
+        width: 99vw;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #presentation-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 70vh;
+        width: 90vw;
+    }
+
+    #img-grid{
+        display: flex;
+        justify-content: center;
+    }
+
+    #img-grid img{
+        width: 36vw;
+        height: 28vh;
+        border-radius: 2vh;
+        box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.55);
+    }
+
+    #txt-grid p{
+        font-size: 1.5vh;
+        color: var(--darkmode-color);
+    }
+
+    /* presentation page ********************************************************************************* */
+
+
+
+    /* skills page *************************************************************************************** */
+
+    #skills-page{
+        height: 100vh;
+        width: 99vw;
+    }
+
+    #skills-page h1{
+        text-align: center;
+        width: 100%;
+        font-size: 6.5vw;
+        color: var(--darkmode-color);
+    }
+    #skills-page h2{
+        border-bottom: 0.5vh solid var(--darkmode-color);
+        padding-bottom: 1vh;
+        width: 90vw;
+        font-size: 4.5vw;
+        color: var(--darkmode-color);
+    }
+
+    #main-skill{
+        margin-left: 2vw;
+        margin-top: 8vh;
+    }
+
+    .skills img{
+        width: 7vw;
+    }
+
+    .skills ul{
+        display: flex;
+        justify-content: space-between;
+        width: 7vw;
+    }
+
+    #tools-skills ul{
+        width: 11vw;
+    }
+
+    #tools-skills img{
+        width: 5.8vw;
+    }
+
+    #design-skills ul{
+        width: 14vw;
+    }
+
+    #office-skills ul{
+        width: 11vw;
+    }
+    #office-skills img{
+        width: 7.5vw;
+    }
+
+
+    /* skills page *************************************************************************************** */
+
+
+
+    /* works page **************************************************************************************** */
+
+    #works-page{
+        height: 80vh;
+        width: 99vw;
+    }
+
+    #works-page  h1{
+        text-align: center;
+        font-size: 6.5vw;
+        color: var(--darkmode-color);
+    }
+
+    #works-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 88vw;
+        margin: 12vh auto;
+        row-gap: 4vh;
+        column-gap: 4vw;
+    }
+
+    #works-grid p {
+        font-size: 3vw;
+        color: var(--darkmode-color);
+    }
+
+    .works-img{
+        width: 40vw;
+        box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.55);
+    }
+
+    /* works page **************************************************************************************** */
+
+
+
+    /* contact page ************************************************************************************** */
+
+    #contact-page{
+        height: 55vh;
+        width: 99vw;
+    }
+
+    #contact-page h1{
+        text-align: center;
+        font-size: 6.5vw;
+        padding-top: 8vh;
+        color: var(--darkmode-color);
+    }
+
+    #contact-page ul{
+        width: 88vw;
+        margin: 0 auto;
+        padding-top: 10vh;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #contact-page img{
+        width: 11vw; 
+    }
+    #button-phone img{
+        width: 8vw;
+    }
+    .flex-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    button{
+        width: 19vw;
+        height: 9vh;
+        margin: 20px;
+        border-radius: 2vw;
+        border: none;
+        position: relative;
+        overflow: hidden;
+        transition: color .3s;
+        z-index: 1;
+    }
+
+    button:before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background: #43a9da;
+        height: 9vh;
+        width: 19vw;
+        border-radius: 2vw;
+    }
+
+    #button-phone::before{
+        background-color: #25d366;
+    }
+
+    #button-email::before{
+        background-color: tomato;
+    }
+    button:before {
+        top: 100%;
+        left: 100%;
+        transition: all .5s;
+    }
+
+    button:hover:before {
+        top: 0vh;
+        left: 0vw;
+    }
+
+    button:active:before {
+        transition: background .5s;
+    }
+
+    /* contact page ************************************************************************************** */
+
+    footer ul{
+        display: flex;
+        justify-content: space-between;
+        width: 80vw;
+        margin: 0 auto;
+        padding-bottom: 1vh;
+    }
+    footer a{
+        text-decoration: none;
+        color: var(--darkmode-color);
+        font-size: 2.5vw;
+    }
+    footer p{
+        font-size: 2.5vw;
+        color: var(--darkmode-color);
+    }
+
+    footer li{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+
+}
+
+
+/* ******************************VERSION MOBILE *********************************************************************** */
+
+
+
+
+
+/* ******************************VERSION TABLETTE ********************************************************************* */
+
+
+@media screen and (max-width: 768px){
+
+    /* landing page ********************************************************************************* */
+    body{
+        background-color: var(--lightmode-color);
+    }
+    #landing-page{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    header nav ul li a {
+        color : var(--darkmode-color);
+        text-decoration: none;
+        font-size: 3vw;
+    }
+
+    header nav ul{
+        padding: 0;
+        padding-top: 1vh;
+    }
+
+    header{
+        width: 99vw;
+    }
+
+    nav{
+        width: 70vw;
+        margin: 0 auto;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
+    #titles{
+        margin-top: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        flex-direction: column;
+    }
+
+    #landing-page h1{
+        width: fit-content;
+    }
+
+    #titre1{
+        font-size: 8vw;
+        color: var(--darkmode-color);
+    }
+
+    #titre2 {
+        margin-top: 1vh;
+        color: transparent;
+        -webkit-text-stroke: 0.01vw var(--darkmode-color);
+        font-size: 7vw;
+    }
+
+    #dark-light-mode-container{
+        right: 1vh;
+        top: 1vh;
+        position: fixed;
+        background-image: url(images/dark-light/moon.svg);
+        background-repeat: no-repeat;
+        background-size: 6vh;
+        background-position: center;
+        width: 6vw;
+        height: 5vh;
+    }
+    /* landing page ********************************************************************************* */
+
+
+
+    /* presentation page ********************************************************************************* */
+    
+    #presentation-page{
+        width: 99vw;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #presentation-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 70vh;
+        width: 90vw;
+    }
+
+    #img-grid{
+        display: flex;
+        justify-content: center;
+    }
+
+    #img-grid img{
+        width: 30vw;
+        height: 40vh;
+        border-radius: 2vh;
+        box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.55);
+    }
+
+    #txt-grid p{
+        font-size: 2vh;
+        color: var(--darkmode-color);
+    }
+
+    /* presentation page ********************************************************************************* */
+
+
+
+    /* skills page *************************************************************************************** */
+
+    #skills-page{
+        height: 100vh;
+        width: 99vw;
+    }
+
+    #skills-page h1{
+        text-align: center;
+        width: 100%;
+        font-size: 6.5vw;
+        color: var(--darkmode-color);
+    }
+    #skills-page h2{
+        border-bottom: 0.5vh solid var(--darkmode-color);
+        padding-bottom: 1vh;
+        width: 90vw;
+        font-size: 4.5vw;
+        color: var(--darkmode-color);
+    }
+
+    #main-skill{
+        margin-left: 2vw;
+        margin-top: 8vh;
+    }
+
+    .skills img{
+        width: 7vw;
+    }
+
+    .skills ul{
+        display: flex;
+        justify-content: space-between;
+        width: 7vw;
+    }
+
+    #tools-skills ul{
+        width: 11vw;
+    }
+
+    #tools-skills img{
+        width: 5.8vw;
+    }
+
+    #design-skills ul{
+        width: 14vw;
+    }
+
+    #office-skills ul{
+        width: 11vw;
+    }
+    #office-skills img{
+        width: 7.5vw;
+    }
+
+
+    /* skills page *************************************************************************************** */
+
+
+
+    /* works page **************************************************************************************** */
+
+    #works-page{
+        height: 100vh;
+        width: 99vw;
+    }
+
+    #works-page  h1{
+        text-align: center;
+        font-size: 6.5vw;
+        color: var(--darkmode-color);
+    }
+
+    #works-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 88vw;
+        margin: 12vh auto;
+        row-gap: 4vh;
+        column-gap: 4vw;
+    }
+
+    #works-grid p {
+        font-size: 2vw;
+        color: var(--darkmode-color);
+    }
+
+    .works-img{
+        width: 40vw;
+        box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.55);
+    }
+
+    /* works page **************************************************************************************** */
+
+
+
+    /* contact page ************************************************************************************** */
+
+    #contact-page{
+        height: 55vh;
+        width: 99vw;
+    }
+
+    #contact-page h1{
+        text-align: center;
+        font-size: 6.5vw;
+        padding-top: 8vh;
+        color: var(--darkmode-color);
+    }
+
+    #contact-page ul{
+        width: 88vw;
+        margin: 0 auto;
+        padding-top: 10vh;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #contact-page img{
+        width: 10vw; 
+    }
+    #button-phone img{
+        width: 7vw;
+    }
+    .flex-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    button{
+        width: 19vw;
+        height: 9vh;
+        margin: 20px;
+        border-radius: 2vw;
+        border: none;
+        position: relative;
+        overflow: hidden;
+        transition: color .3s;
+        z-index: 1;
+    }
+
+    button:before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background: #43a9da;
+        height: 9vh;
+        width: 19vw;
+        border-radius: 2vw;
+    }
+
+    #button-phone::before{
+        background-color: #25d366;
+    }
+
+    #button-email::before{
+        background-color: tomato;
+    }
+    button:before {
+        top: 100%;
+        left: 100%;
+        transition: all .5s;
+    }
+
+    button:hover:before {
+        top: 0vh;
+        left: 0vw;
+    }
+
+    button:active:before {
+        transition: background .5s;
+    }
+
+    /* contact page ************************************************************************************** */
+
+    footer ul{
+        display: flex;
+        justify-content: space-between;
+        width: 80vw;
+        margin: 0 auto;
+        padding-bottom: 1vh;
+    }
+    footer a{
+        text-decoration: none;
+        color: var(--darkmode-color);
+        font-size: 2.5vw;
+    }
+    footer p{
+        font-size: 2.5vw;
+        color: var(--darkmode-color);
+    }
+
+    footer li{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    
+}
+
+
+/* ******************************VERSION TABLETTE ********************************************************************* */
+
+
+
+
+
+
+/* ****************************VERSION ORDINATEUR ********************************************************************* */
+
+
+@media screen and (min-width: 769px){
+
+    /* landing page ********************************************************************************* */
+
+    body{
+        background-color: var(--lightmode-color);
+    }
+
+    #landing-page{
+        width: 99vw;
+        height: 100vh;
+    }
+
+    header nav ul li a {
+        color : var(--darkmode-color);
+        text-decoration: none;
+        font-size: 1.5vw;
+    }
+
+    header nav ul{
+        padding: 0;
+        padding-top: 1vh;
+    }
+
+    header{
+        width: 99vw;
+    }
+
+    nav{
+        width: 70vw;
+        margin: 0 auto;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #titles{
+        margin-top: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        flex-direction: column;
+    }
+
+    #landing-page h1{
+        width: fit-content;
+    }
+
+    #titre1{
+        font-size: 5vw;
+        color: var(--darkmode-color);
+    }
+
+    #titre2 {
+        margin-top: 1vh;
+        color: var(--lightmode-color);
+        -webkit-text-stroke: 0.01vw var(--darkmode-color);
+        font-size: 4vw;
+    }
+
+    #dark-light-mode-container{
+        right: 1vh;
+        top: 1vh;
+        position: fixed;
+        background-image: url(images/dark-light/moon.svg);
+        background-repeat: no-repeat;
+        background-size: 6vh;
+        background-position: center;
+        width: 5vw;
+        height: 5vh;
+    }
+
+    /* landing page ********************************************************************************* */
+
+    /* presentation page ********************************************************************************* */
+
+    #presentation-page{
+        width: 99vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #presentation-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 70vh;
+        width: 90vw;
+    }
+
+    #img-grid{
+        display: flex;
+        justify-content: center;
+    }
+
+    #img-grid img{
+        width: 24vw;
+        border-radius: 2vh;
+        box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.55);
+    }
+
+    #txt-grid p{
+        font-size: 3vh;
+        color: var(--darkmode-color);
+    }
+    /* presentation page ********************************************************************************* */
+
+    /* skills page *************************************************************************************** */
+
+    #skills-page{
+        height: 100vh;
+        width: 99vw;
+    }
+
+    #skills-page h1{
+        text-align: center;
+        width: 100%;
+        font-size: 2.5vw;
+        color: var(--darkmode-color);
+    }
+    #skills-page h2{
+        border-bottom: 0.5vh solid var(--darkmode-color);
+        padding-bottom: 1vh;
+        width: 90vw;
+        font-size: 1.5vw;
+        color: var(--darkmode-color);
+    }
+
+    #main-skill{
+        margin-left: 2vw;
+        margin-top: 8vh;
+    }
+
+    .skills img{
+        width: 3vw;
+    }
+
+    .skills ul{
+        display: flex;
+        justify-content: space-between;
+        width: 7vw;
+    }
+
+    #tools-skills ul{
+        width: 11vw;
+    }
+
+    #tools-skills img{
+        width: 2.8vw;
+    }
+
+    #design-skills ul{
+        width: 14vw;
+    }
+
+    #office-skills ul{
+        width: 11vw;
+    }
+    #office-skills img{
+        width: 3.5vw;
+    }
+
+
+    /* skills page *************************************************************************************** */
+
+    /* works page **************************************************************************************** */
+
+    #works-page{
+        height: fit-content;
+        width: 99vw;
+    }
+
+    #works-page  h1{
+        text-align: center;
+        font-size: 2.5vw;
+        color: var(--darkmode-color);
+    }
+
+    #works-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 70vw;
+        margin: 12vh auto;
+        row-gap: 4vh;
+    }
+
+    #works-grid p {
+        font-size: 1vw;
+        color: var(--darkmode-color);
+    }
+
+    .works-img{
+        width: 30vw;
+        box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.55);
+    }
+
+    /* works page **************************************************************************************** */
+
+    /* contact page ************************************************************************************** */
+
+    #contact-page{
+        height: 95vh;
+        width: 99vw;
+    }
+
+    #contact-page h1{
+        text-align: center;
+        font-size: 2.5vw;
+        padding-top: 8vh;
+        color: var(--darkmode-color);
+    }
+
+    #contact-page ul{
+        width: 70vw;
+        margin: 0 auto;
+        padding-top: 10vh;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #contact-page img{
+        width: 6vw;
+    }
+    #button-phone img{
+        width: 5vw;
+    }
+    .flex-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    button{
+        width: 11vw;
+        height: 13vh;
+        margin: 20px;
+        border-radius: 2vw;
+        border: none;
+    }
+    button{
+        position: relative;
+        overflow: hidden;
+        transition: color .3s;
+        z-index: 1;
+    }
+
+    button:before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background: #43a9da;
+        height: 13vh;
+        width: 11vw;
+        border-radius: 2vw;
+    }
+
+    #button-phone::before{
+        background-color: #25d366;
+    }
+
+    #button-email::before{
+        background-color: tomato;
+    }
+    button:before {
+        top: 100%;
+        left: 100%;
+        transition: all .5s;
+    }
+
+    button:hover:before {
+        top: 0vh;
+        left: 0vw;
+    }
+
+    button:active:before {
+        transition: background .5s;
+    }
+
+    /* contact page ************************************************************************************** */
+
+    footer ul{
+        display: flex;
+        justify-content: space-between;
+        width: 50vw;
+        margin: 0 auto;
+        padding-bottom: 1vh;
+    }
+    footer a{
+        text-decoration: none;
+        color: var(--darkmode-color);
+        font-size: 1.2vw;
+    }
+    footer p{
+        font-size: 1.2vw;
+        color: var(--darkmode-color);
+    }
+
+
+}
+
+/* ****************************VERSION ORDINATEUR ********************************************************************* */
