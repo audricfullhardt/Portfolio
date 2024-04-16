@@ -1,1 +1,1 @@
-Here is the first version of my portfolio as a junior developer
+Here is the second version of my portfolio as a junior developer
